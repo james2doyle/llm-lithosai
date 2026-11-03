@@ -1,0 +1,23 @@
+[project]
+name = "llm-lithosai"
+version = "0.1"
+description = "Access LithosAI hosted models via API"
+readme = "README.md"
+authors = [{name = "James Doyle"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "llm>=0.10"
+]
+[project.urls]
+Homepage = "https://github.com/james2doyle/llm-lithosai"
+Changelog = "https://github.com/james2doyle/llm-lithosai/releases"
+Issues = "https://github.com/james2doyle/llm-lithosai/issues"
+CI = "https://github.com/james2doyle/llm-lithosai/actions"
+[project.entry-points.llm]
+lithosai = "llm_lithosai"
+[project.optional-dependencies]
+test = ["pytest"]
